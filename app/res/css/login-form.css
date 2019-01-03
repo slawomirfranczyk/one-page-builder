@@ -1,0 +1,81 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.login-box {
+	position: absolute;
+	background-color: #fffeff;
+	width: 400px;
+	padding: 50px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.login-box h2 {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.login-box .input-box {
+	position: relative;
+}
+
+.login-box .input-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 20px;
+	color: #3f3c3f;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 2px solid #3f3c3f;
+	outline: none;
+}
+
+.login-box .input-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 20px;
+	pointer-events: none;
+}
+
+.login-box .input-box input:focus ~ label,
+.login-box .input-box input:valid ~ label {
+	top: -25px;
+	font-size: 16px; 
+	transition: .5s;
+}
+
+.login-box input[type="submit"] {
+	background-color: #fffeff;
+	border: 2px solid #3f3c3f;
+	color: #3f3c3f;
+	font-size: 20px;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+.login-box input[type="submit"]:hover {
+	color: #fff;
+	background-color: #3f3c3f;
+	transition: .3s;
+	cursor: pointer;
+}
+
+p#error {
+	margin-top: 25px;
+	padding-left: 15px;
+	color: #e74c3c;
+	border-left: 2px solid #e74c3c;
+	text-align: left;
+}
+
